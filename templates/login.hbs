@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="css/login.css">
+</head>
+<body>
+    <h1>Login</h1>
+
+    <!-- ✅ Fixed: Wrapped input fields inside the form -->
+    <form action="/login" method="POST">
+        <input type="text" name="name" placeholder="Name" autocomplete="off" required>
+        <br>
+        <input type="password" name="password" placeholder="Password" autocomplete="off" required>
+        <br>
+        <input type="submit" class="sub" value="Login">
+    </form>
+
+    <h3>Don't have an account?</h3>
+    <a href="/signup">Go to signup page</a>
+</body>
+</html>
